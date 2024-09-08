@@ -1,6 +1,7 @@
 # Node modules
 node_modules/
 README.md
+.env
 # Environment variables
 .env
 

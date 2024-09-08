@@ -3,7 +3,7 @@ import { YOUTUBE_API_URL } from "../utils/constants";
 import Videocard from "./Videocard";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { closeMenu, showMenu } from "../utils/menuSlice";
+import { showMenu } from "../utils/menuSlice";
 const Videocontainer = () => {
     const dispatch=useDispatch();
     useEffect(()=> {
@@ -20,7 +20,7 @@ const Videocontainer = () => {
         setVideoData(json.items);
     };
     return (
-        <div className="flex flex-wrap justify-around m-1 mt-16 border-2 w-fit flex-1 overflow-auto">
+        <div className="flex flex-wrap justify-around m-1 mt-16 border-2 w-fit flex-1">
             {videoData.map((mp) => (
                 <Link to={"/watch/?v=" + mp.id} key={mp.id}>
                     <Videocard items={mp} />
