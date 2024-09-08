@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import {closeMenu} from "../utils/menuSlice";
 import { useSearchParams } from "react-router-dom";
+import Comments from "./Comments";
 const Watchvideo = () => {
     const dispatch=useDispatch();
     useEffect(()=> {
@@ -10,9 +11,9 @@ const Watchvideo = () => {
     const [searchParams]=useSearchParams();
     const id=searchParams.get("v");
     return (
-        <div>
+        <div className="w-2/3">
             <iframe
-                className="mt-10 m-6 ml-20 rounded-lg"
+                className="mt-10 m-6 rounded-lg"
                 width="1000"
                 height="515"
                 src={`https://www.youtube.com/embed/${id}?si=FHxWDgydUGFpyHG1`}
@@ -22,6 +23,7 @@ const Watchvideo = () => {
                 referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
             ></iframe>
+            <Comments/>
         </div>
     );
 };

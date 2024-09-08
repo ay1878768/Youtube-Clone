@@ -1,6 +1,6 @@
 # Node modules
 node_modules/
-
+README.md
 # Environment variables
 .env
 

@@ -37,7 +37,7 @@ const Navbar = () => {
                 <img className="h-[60px] pl-2 cursor-pointer"  alt="youtube logo" src="https://download.logo.wine/logo/YouTube/YouTube-Logo.wine.png"/>
             </div>
             <div className="w-[600px] flex">
-                <input className="pl-5 lg:w-[90%] border-2 rounded-l-full py-2 focus:outline-none focus:border-blue-400 focus:border:shadow-lg" type="text" placeholder="Search"
+                <input className="pl-5 w-[90%] border-2 rounded-l-full py-2 focus:outline-none focus:border-blue-400 focus:border:shadow-lg" type="text" placeholder="Search"
                     value={searchQuery}
                     onChange={(e)=> setSearchQuery(e.target.value)}
                     onFocus={() => setShowSuggestion(true)}

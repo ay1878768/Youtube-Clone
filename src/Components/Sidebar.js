@@ -16,7 +16,7 @@ const Sidebar = () => {
         return <Secondsidebar/>;
     }
     return (
-        <div className="bg-white w-[12rem] pl-3 mx-2 sticky top-16">
+        <div className={`bg-white w-[12rem] pl-3 mx-2 sticky top-16 z-10`}>
             <div className="flex flex-col justify-center items-left gap-2 text-md font-sm">
                 <div className="flex justify-left items-center gap-5 bg-slate-300 hover:bg-slate-300 p-2 rounded-lg cursor-pointer whitespace-nowrap">
                     <div>

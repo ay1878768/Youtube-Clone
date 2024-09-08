@@ -3,11 +3,11 @@ import { SiYoutubeshorts } from "react-icons/si";
 import { MdOutlineSubscriptions } from "react-icons/md";
 import { RiContactsLine } from "react-icons/ri";
 import { PiDownloadSimple } from "react-icons/pi";
-import { useSelector } from "react-redux";
+import {  useSelector } from "react-redux";
 
 const Secondsidebar = () => {
     const closeMenu=useSelector((store)=>store.menu.closeMenu);
-    if(closeMenu) {
+    if(!closeMenu) {
         return null;
     }
     return (
